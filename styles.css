@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Tahoma, sans-serif;
+    color: #243e63;
+}
+
+#landing {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo__img {
+    width: 40px;
+    height: 40px;
+    margin: 24px 24px;
+}
+.logo__title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+}
+
+.nav__description {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.nav__links {
+    padding: 20px 20px;
+    text-decoration: none;
+}
+
+.nav__link {
+    list-style-type: none;    
+    padding: 16px 16px;
+}
+
+.nav__link--btn {
+    margin: 0;
+    padding: 10px 32px;
+    margin-top: 2px;
+    border-radius: 99999px;
+    background-color: #6415ff;
+    color: #fff;
+    font-weight: bold;
+    line-height: 1.5;
+    border: none;
+    width: auto;
+}
+
+
+.header__description, .header__title {
+    display: flex;
+    flex-direction: column;
+    width: calc(100%/3);
+    margin: 20px 20px;
+}
+
+
+.purple {
+    color: #6415ff;
+}
+
+.email__input {
+    width: 300px;
+    margin: 0 24px;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 999999px;
+    outline: none;
+  }
