@@ -658,11 +658,51 @@ TESTIMONIALS
     font-weight: 500;
     color: #7c8ba1;
     line-height: 1.625;
+    margin-bottom: 24px;
 }
 
-.testimonial__rating i {
+.testimonial__rating {
     display: flex;
+    margin-bottom: 12px;
+}
+.fa-solid {
     color: rgba(246, 173, 85);
     margin-right: 2px;
     margin-top: 4px;
+}
+
+.profile__pic {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 24px;
+}
+.testimonial__profile {
+    display: flex;
+    align-items: center;
+}
+
+.testimonial__details {
+    display: flex;
+    flex-direction: column;
+}
+
+.testimonial__name {
+    font-weight: 700;
+    color: #243e63;
+    font-size: 20px;
+    line-height: 1.5;
+}
+.testimonial__role {
+    color: #7c8ba1;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.testimonial__title {
+    margin-bottom: 12px;
+}
+.testimonial__para {
+    margin-bottom: 20px;
+    line-height: 1.625;
 }
