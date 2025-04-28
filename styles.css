@@ -706,3 +706,39 @@ TESTIMONIALS
     margin-bottom: 20px;
     line-height: 1.625;
 }
+
+.testimonial_buttons {
+    margin-left: 120px;
+}
+
+.testimonial__button {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    color: #6415ff;
+    margin-right: 24px;
+}
+
+/* 
+
+START 
+
+*/
+
+.containers {
+    padding: 96px 0;
+    width: 100%;
+    background-color: rgb(100, 21, 255);
+    border-radius: 8px;
+}
+
+.start__container {
+}
+
+.start__title {
+    color: #f7fafc;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.5;
+    z-index: 2;
+}
