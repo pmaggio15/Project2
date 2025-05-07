@@ -17,6 +17,11 @@
     align-items: center;
 }
 
+.model {
+    margin: 0 auto;
+    width: 100%;
+}
+
 .logo__img {
     width: 40px;
     height: 40px;
@@ -37,12 +42,17 @@
 
 .nav__links {
     padding: 20px 20px;
-    text-decoration: none;
+
 }
 
 .nav__link {
     list-style-type: none;    
     padding: 16px 16px;
+    text-decoration: none;
+}
+
+.nav__link:hover {
+    color: #6415ff;
 }
 
 .nav__link--btn {
@@ -61,8 +71,9 @@
 .container {
     display: flex;
     align-items: center;
-    margin-bottom: 18px;
-    padding-bottom: 50px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .header__description {
@@ -623,12 +634,13 @@ TESTIMONIALS
 .love__img {
     width: 607px;
     height: 412px;
-    margin-right: 24px;
+    margin-right: 40px;
 }
 
 .row__testimonial {
     display: flex;
     align-items: center;
+    margin-bottom: 24px;
 }
 
 .section__tag--testimonials {
@@ -831,7 +843,7 @@ FOOTER
 .footer__column--link {
     color: #f7fafc;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 16px;
     margin-top: 12px;
     line-height: 1.5;
     font-weight: 500;
