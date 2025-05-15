@@ -844,12 +844,23 @@ TESTIMONIALS
     line-height: 1.625;
 }
 
-.testimonial_buttons {
+.testimonial__buttons {
     display: flex;
     align-items: center;
+    margin-left: 200px;
+
     
 }
-
+.circle {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px; /* Controls arrow size */
+    color: #6415ff;
+}
 .testimonial__button {
     display: flex;
     justify-content: center;
@@ -867,9 +878,16 @@ button {
     
 }
 
+.line {
+    height: 24px; /* Adjust length of the line */
+    width: 2px; 
+    background-color: #a0aec046;
+}
+
 .testimonial__button--svg {
     width: 16px;
     height: 16px;
+    color: #6415ff;
 }
 
 
