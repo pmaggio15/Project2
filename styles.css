@@ -25,6 +25,13 @@ a:hover {
     display: flex;
     padding-top: 32px;
 }
+.nav__links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 2px;
+    margin-left: 300px;
+}
 .row {
     width: 100%;
     max-width: 1280px;
@@ -48,29 +55,6 @@ a:hover {
     letter-spacing: 0.6px;
     padding-bottom: 2px;
 }
-
-.nav__links {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding-bottom: 2px;
-    margin-left: 300px;
-}
-
-.nav__link {
-    font-size: 16px;
-    font-weight: 600;
-    padding-top: 4px;
-    letter-spacing: 0.35px;
-    border-bottom: 2px solid transparent;
-    position: relative;
-    transition: all 300ms;
-    margin: 0 24px;
-}
-
-.nav__link:hover {
-    color: #6415ff;
-}
 .nav__link--primary {
     margin: 0;
     padding: 10px 32px;
@@ -83,6 +67,19 @@ a:hover {
     width: auto;
     transition: all 300ms;
 }
+
+.nav__link {
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: .35px;
+    position: relative;
+}
+.nav__link--primary::after {
+    content: "";
+    width: 0;
+    height: 0;
+}
+
 .nav__link:after {
     content: "";
     position: absolute;
@@ -90,9 +87,19 @@ a:hover {
     bottom: -6px;
     height: 2px;
     width: 100%;
-    background: #6415ff;
+    background-color: rgba(80, 17, 204);
     transition: all 300ms;
     opacity: 0;
+}
+.nav__link {
+    font-size: 16px;
+    font-weight: bold;
+    padding-top: 4px;
+    letter-spacing: 0.35px;
+    border-bottom: 2px solid transparent;
+    position: relative;
+    transition: all 300ms;
+    margin: 0 24px;
 }
 
 .btn__menu {
@@ -611,6 +618,11 @@ PLAN
     background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
 }
 
+.plan__button:hover {
+    transform: translate(1px, -1px);
+    box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
 .plan__stripe {
     position: absolute;
     top: 0;
@@ -636,6 +648,11 @@ PLAN
 .plan:nth-child(1) .plan__middle, .plan:nth-child(3 ) .plan__middle {
     border-top: 2px solid rgb(229, 231, 235);
     border-bottom: 2px solid rgb(229, 231, 235);
+}
+
+.plan__button:hover {
+    transform: translate(1px, -1px);
+    box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
 }
 
 @media (max-width: 1280px) {
@@ -954,17 +971,17 @@ START
 .start__title, .start__buttons {
         width: 50%;
     }
-.start__button--btn:hover:nth-child(1) {
+.start__button--btn1:hover:nth-child(1) {
         background-color: rgba(229, 62, 62);
     }
 
-.start__button--btn:nth-child(1) {
+.start__button--btn1:nth-child(1) {
     background: #f56565;
     box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
     margin-right: 32px;
     transition: all 300ms;
 }
-.start__button--btn {
+.start__button--btn1 {
     padding: 20px 40px;
     border-radius: 500px;
     font-weight: 700;
@@ -975,22 +992,23 @@ START
     margin: 1px;
     z-index: 2;
 }
-.start__button--btn:hover:nth-child(2) {
+.start__button--btn2:hover:nth-child(2) {
     background-color: rgba(247, 250, 252);
     color: rgba(100, 21, 255);
 }
 
-.start__button--btn:nth-child(2) {
+.start__button--btn2:nth-child(2) {
     border: 1px solid rgb(160, 174, 192);
     transition: all 300ms;
 }
 
-.start__button--btn {
+.start__button--btn2 {
     padding: 20px 40px;
     border-radius: 500px;
     font-weight: 700;
     font-size: 16px;
-    color: #f7fafc;
+    color: white;
+    background-color: transparent;
     line-height: 1.5;
     letter-spacing: 0.025em;
     margin: 1px;
