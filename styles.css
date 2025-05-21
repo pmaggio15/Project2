@@ -12,26 +12,19 @@
     max-width: 1200px;
     margin: 0 auto;
 }
-a {
-    display: inline;
-    text-decoration: none;
-}
-a:hover {
-    text-decoration: underline;
-    text-decoration-color: #6415ff;
+section {
+    padding: 0 32px;
 }
 
-.nav {
+nav {
     display: flex;
     padding-top: 32px;
 }
-.nav__links {
+.row__nav--row {
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding-bottom: 2px;
-    margin-left: 300px;
+    justify-content: space-between;
 }
+
 .row {
     width: 100%;
     max-width: 1280px;
@@ -40,10 +33,10 @@ a:hover {
 .nav__logo {
     display: flex;
     align-items: center;
-    padding-left: 55px;
     margin: 8px 0;
     padding-bottom: 4px;
 }
+
 .nav__logo--img {
     width: 40px;
     height: 40px;
@@ -55,29 +48,39 @@ a:hover {
     letter-spacing: 0.6px;
     padding-bottom: 2px;
 }
-.nav__link--primary {
-    margin: 0;
-    padding: 10px 32px;
-    margin-top: 2px;
-    border-radius: 9999px;
-    background: #6415ff;
-    color: #fff;
-    line-height: 1.5;
-    border: none;
-    width: auto;
-    transition: all 300ms;
+
+.nav__links {
+    display: flex;
+    align-items: center;
+    padding-left: 400px;
+    padding-bottom: 2px;
+}
+
+.nav__link:hover {
+    color: #6415ff;
 }
 
 .nav__link {
     font-size: 14px;
     font-weight: 600;
-    letter-spacing: .35px;
+    padding-top: 4px;
+    letter-spacing: 0.35px;
+    border-bottom: 2px solid transparent;
     position: relative;
+    transition: all 300ms;
 }
-.nav__link--primary::after {
-    content: "";
-    width: 0;
-    height: 0;
+
+.nav__link {
+    margin: 0 24px;
+}
+
+a {
+    display: inline;
+    text-decoration: none;
+}
+
+.nav__link:hover:after {
+    opacity: 1;
 }
 
 .nav__link:after {
@@ -87,20 +90,125 @@ a:hover {
     bottom: -6px;
     height: 2px;
     width: 100%;
-    background-color: rgba(80, 17, 204);
+    background: #6415ff;
     transition: all 300ms;
     opacity: 0;
 }
+
+.nav__link:hover {
+    color: #6415ff;
+}
+
+.login {
+    margin-left: 48px;
+}
+
+
+element.style {
+}
+.nav__link:hover {
+    color: #6415ff;
+}
+.login {
+    margin-left: 48px;
+}
 .nav__link {
-    font-size: 16px;
-    font-weight: bold;
+    font-size: 14px;
+    font-weight: 600;
     padding-top: 4px;
     letter-spacing: 0.35px;
     border-bottom: 2px solid transparent;
     position: relative;
     transition: all 300ms;
+}
+
+.nav__link {
     margin: 0 24px;
 }
+
+a {
+    display: inline;
+    text-decoration: none;
+}
+.nav__link:hover:after {
+    opacity: 1;
+}
+
+.nav__link:after {
+    content: "";
+    position: absolute;
+    left: 0px;
+    bottom: -6px;
+    height: 2px;
+    width: 100%;
+    background: #6415ff;
+    transition: all 300ms;
+}
+
+.nav__link--primary:hover {
+    background-color: rgba(80, 17, 204);
+}
+
+.nav__link:hover {
+    color: #6415ff;
+}
+
+.nav__link--primary {
+    margin: 0;
+    padding: 10px 32px;
+    margin-top: 2px;
+    border-radius: 9999px;
+    background: #6415ff;
+    line-height: 1.5;
+    border: none;
+    width: auto;
+    transition: all 300ms;
+}
+
+.nav__link {
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.35px;
+    position: relative;
+}
+
+a {
+    display: inline;
+    text-decoration: none;
+}
+
+.nav__link:hover:after {
+    opacity: 1;
+}
+
+.nav__link--primary:after {
+    content: "";
+    width: 0;
+    height: 0;
+}
+
+.nav__link:after {
+    position: absolute;
+    left: 0px;
+    bottom: -6px;
+    background: #6415ff;
+    transition: all 300ms;
+}
+
+.nav__link:hover {
+    color: #6415ff;
+}
+.nav__link--primary {
+    line-height: 1.5;
+    color: white;
+}
+.nav__link {
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.35px;
+}
+
+
 
 .btn__menu {
     display: none;
@@ -112,7 +220,6 @@ a:hover {
 button {
     cursor: pointer;
 }
-
 
 .container {
     padding: 60px 0;
@@ -915,6 +1022,9 @@ button {
     border: none;
     
 }
+.testimonial__button:hover {
+    background-color: rgba(226, 232, 240);
+}
 
 .line {
     height: 24px; /* Adjust length of the line */
@@ -1093,7 +1203,9 @@ FOOTER
     color: #f7fafc;
     line-height: 1.5;
 }
-
+.footer__column--link:hover {
+    color: white;
+}
 .footer__column--link {
     color: #f7fafc;
     text-decoration: none;
@@ -1103,6 +1215,22 @@ FOOTER
     font-weight: 500;
     position: relative;
     cursor: pointer;
+}
+
+.footer__column--link:hover:after {
+    opacity: 1;
+}
+
+.footer__column--link:after {
+    content: "";
+    position: absolute;
+    left: 0px;
+    bottom: -6px;
+    height: 2px;
+    width: 100%;
+    background: #fff;
+    transition: all 300ms;
+    opacity: 0;
 }
 
 .footer__divider {
