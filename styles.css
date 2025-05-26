@@ -584,13 +584,12 @@ VALUES
 }
 
 .quality__grid {
-    transform: translateX(25%) translateY(2%) scaleX(1) scaleY(1);
+    transform: translateX(-85%) translateY(30%) scaleX(1) scaleY(1);
     width: 80px;
     height: 80px;
     fill: rgb(100, 21, 255);
     position: absolute;
-    margin-top: 400px;
-    margin-right: 500px;
+    margin-top: 300px;
     z-index: 0;
 }
 
