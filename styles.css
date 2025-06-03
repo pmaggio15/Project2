@@ -498,6 +498,7 @@ button {
 }
 .quality__description, .quality__img--wrapper {
     width: 50%;
+    
 }
 .quality__img--wrapper {
     border-radius: 4px;
@@ -507,10 +508,13 @@ button {
     z-index: 2;
     display: flex;
 }
+
 .quality__img {
+    background-color: white;
+    position: relative;
     z-index: 1;
 }
-/*WORK ON GRID*/
+
 .quality__grid {
     transform: translateX(50%) translateY(50%) scaleX(1) scaleY(1);
     width: 80px;
@@ -524,6 +528,7 @@ button {
     z-index: 0;
     display: block;
 }
+
 
 /* STEPS */
 
